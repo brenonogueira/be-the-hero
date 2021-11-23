@@ -1,16 +1,15 @@
-import React from 'react'
-import { Route, Routes  } from 'react-router-dom'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 
-import Logon from './pages/Logon'
-import Register from './pages/Register'
+import Logon from "./pages/Logon";
+import Register from "./pages/Register";
 
 export default function RoutesApp() {
-	return (
-	<Routes>
-			<Route path="/" exact component={<Logon />} />
-				<Route path="/register" component={<Register />} />
-	</Routes>
-			
-	)
-
+  return (
+    <Routes>
+      <Route path="/" exact component={<Logon />} />
+      <Route path="/register" component={<Register />} />
+      <Route path="/register" component={<Register />} />
+    </Routes>
+  );
 }
